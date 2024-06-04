@@ -1,6 +1,6 @@
 from datetime import datetime
 from flask import Flask, jsonify
-from dice_roller.dice import Dice
+from dice_rollers.dice import Dice
 
 app = Flask(__name__)
 
