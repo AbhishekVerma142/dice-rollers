@@ -1,10 +1,9 @@
 from flask import Flask, jsonify
-from dice_roller.dice import Dice
+from dice_rollers.dice import Dice
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
     dice = Dice()
-    roll = dice.roll()
-    return jsonify({'roll': roll})
+    return jsonify({'roll': dice.roll()})
